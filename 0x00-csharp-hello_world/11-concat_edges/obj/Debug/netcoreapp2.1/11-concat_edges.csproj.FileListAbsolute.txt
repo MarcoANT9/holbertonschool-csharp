@@ -1,0 +1,12 @@
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\bin\Debug\netcoreapp2.1\11-concat_edges.deps.json
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\bin\Debug\netcoreapp2.1\11-concat_edges.runtimeconfig.json
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\bin\Debug\netcoreapp2.1\11-concat_edges.runtimeconfig.dev.json
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\bin\Debug\netcoreapp2.1\11-concat_edges.dll
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\bin\Debug\netcoreapp2.1\11-concat_edges.pdb
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\obj\Debug\netcoreapp2.1\11-concat_edges.csprojAssemblyReference.cache
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\obj\Debug\netcoreapp2.1\11-concat_edges.AssemblyInfoInputs.cache
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\obj\Debug\netcoreapp2.1\11-concat_edges.AssemblyInfo.cs
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\obj\Debug\netcoreapp2.1\11-concat_edges.csproj.CoreCompileInputs.cache
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\obj\Debug\netcoreapp2.1\11-concat_edges.dll
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\obj\Debug\netcoreapp2.1\11-concat_edges.pdb
+F:\HOLBERTON\AR-VR\C#\holbertonschool-csharp\0x00-csharp-hello_world\11-concat_edges\obj\Debug\netcoreapp2.1\11-concat_edges.genruntimeconfig.cache
