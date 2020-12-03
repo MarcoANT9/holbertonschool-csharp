@@ -14,29 +14,19 @@ class MyStack
             Console.WriteLine($"Top item: {aStack.Peek()}");
 
         Console.Write($"Stack contains: \"{search}\": ");
-        int exist = 0;
-        int pos = 1;
 
-        foreach (string element in aStack)
-        {
-            if (element == search)
-            {
-                exist = 1;
-                break;
-            }
-            pos += 1;
-        }
-        if (exist == 0)
+        if (aStack.Contains(search) == false)
             Console.WriteLine("False");
         else
         {
             Console.WriteLine("True");
-            while (pos > 0)
+            Stack<string> otherStack = new Stack<string>(aStack);
+            foreach(string element in otherStack)
             {
-                aStack.Pop();
-                pos--;
+                if (aStack.Pop() == search)
+                    break;
             }
-        }
+        } 
         aStack.Push(newItem);
         return (aStack);
     }
