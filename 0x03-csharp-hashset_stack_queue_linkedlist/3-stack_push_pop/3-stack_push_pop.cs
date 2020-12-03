@@ -13,7 +13,7 @@ class MyStack
         else
             Console.WriteLine($"Top item: {aStack.Peek()}");
 
-        Console.Write($"Stack contains: {search}: ");
+        Console.Write($"Stack contains: \"{search}\": ");
         int exist = 0;
         int pos = 1;
 
