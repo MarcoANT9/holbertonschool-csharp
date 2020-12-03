@@ -17,7 +17,7 @@ class LList
         {
             if (myLList != null && index >= 0)
             {
-                for (int i = 0; i < index && currentNode != null; i++)
+                for (int i = 0; i <= index && currentNode != null; i++)
                 {
                     if (i == index)
                     {
