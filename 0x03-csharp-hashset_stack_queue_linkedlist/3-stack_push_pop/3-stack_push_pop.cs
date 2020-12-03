@@ -15,6 +15,7 @@ class MyStack
 
         Console.Write($"Stack contains: {search}: ");
         int exist = 0;
+        int pos = 1;
 
         foreach (string element in aStack)
         {
@@ -23,22 +24,17 @@ class MyStack
                 exist = 1;
                 break;
             }
+            pos += 1;
         }
         if (exist == 0)
             Console.WriteLine("False");
         else
         {
             Console.WriteLine("True");
-            int i = 1;
-            while (i != 0)
+            while (pos > 0)
             {
-                if (aStack.Peek() == search)
-                {
-                    aStack.Pop();
-                    break;
-                }
-                else
-                    aStack.Pop();
+                aStack.Pop();
+                pos--;
             }
         }
         aStack.Push(newItem);
