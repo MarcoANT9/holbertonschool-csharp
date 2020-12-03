@@ -19,9 +19,9 @@ class MyStack
         {
             while (aStack.Contains(search))
                 aStack.Pop();
-            if (newItem != null)
-                aStack.Push(newItem);
         }
+        if (newItem != null)
+            aStack.Push(newItem);
         return (aStack);
     }
 }
