@@ -4,5 +4,5 @@ enum Rating
 {
     Good,
     Great,
-    Excelent,
+    Excellent,
 }
