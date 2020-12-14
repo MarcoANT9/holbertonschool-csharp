@@ -19,7 +19,6 @@ class List
             catch (ArgumentOutOfRangeException)
             {
                 Console.WriteLine("Out of range");
-                break;
             }
             catch (DivideByZeroException)
             {
