@@ -24,7 +24,7 @@ public struct Dog
 
     public override string ToString()
     {
-        string ret_str = $"Dog name: {this.name}\nAge: {this.age}\nOwner: {this.owner}\nRating: {this.rating}";
+        string ret_str = $"Dog name: {name.ToString()}\nAge: {age.ToString()}\nOwner: {owner.ToString()}\nRating: {rating.ToString()}";
         return ret_str;
     }
 }
