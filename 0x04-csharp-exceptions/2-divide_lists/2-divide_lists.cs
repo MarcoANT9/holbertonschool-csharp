@@ -7,29 +7,25 @@ class List
     {
         int i = 0;
         List<int> retList = new List<int>();
-        int quot;
+        int quot = 0;
 
         while (i < listLength)
         {
             try
             {
                 quot = list1[i] / list2[i];
+                retList.Add(quot);
             }
-            catch (System.ArgumentOutOfRangeException)
+            catch (ArgumentOutOfRangeException)
             {
                 Console.WriteLine("Out of range");
                 break;
             }
-            catch (System.InvalidOperationException)
-            {
-                quot = 0;
-            }
             catch (DivideByZeroException)
             {
                 Console.WriteLine("Cannot divide by zero");
-                quot = 0;
+                retList.Add(0);
             }
-            retList.Add(quot);
             i++;
         }
         return (retList);
