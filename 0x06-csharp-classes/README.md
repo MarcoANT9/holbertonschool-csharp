@@ -13,8 +13,6 @@ Based on 0-enemy, write a public class Zombie that defines a zombie by:
 * public constructor: public Zombie()
     * sets the value of health to 0
 
-
-
 #### Task 2. Health validation
 Based on 1-enemy, write a public class Zombie that defines a zombie by:
 
