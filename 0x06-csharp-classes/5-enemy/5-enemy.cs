@@ -44,7 +44,7 @@ namespace Enemies
         ///<summary>This is an overide of the ToString method.</summary>
         public override string ToString()
         {
-            return $"Zombie name: {this.name} / Total Health: {this.health}";
+            return $"Zombie Name: {name} / Total Health: {health}";
         }
 
     }
