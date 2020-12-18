@@ -52,7 +52,7 @@ namespace Text.Tests
         [Test]
         public void palindrome_punctuation()
         {
-            string my_str = "Anita; Lava la.Tina";
+            string my_str = "Anita Lava la Tina";
             bool result = str.IsPalindrome(my_str);
             Assert.IsTrue(result);
         }

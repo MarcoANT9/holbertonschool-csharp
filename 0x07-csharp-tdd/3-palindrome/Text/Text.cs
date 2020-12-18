@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Text
 {
@@ -16,29 +15,24 @@ namespace Text
 
             string _s = s;
             _s = _s.ToLower();
-            
-            List<char> punctuation = new List<char>();
-            punctuation.Add(' ');
-            punctuation.Add(',');
-            punctuation.Add('.');
-            punctuation.Add(':');
-            punctuation.Add(';');
+            _s = _s.Trim(' ', ',', '.', ':', ';');
 
             int i = 0;
-            int j = s.Length - 1;
+            int j = _s.Length - 1;
 
             while (i < j)
             {
-                if (punctuation.Contains(_s[i]))
+                if (_s[i] == ' ')
                 {
                     i++;
                     continue;
                 }
-                if (punctuation.Contains(_s[j]))
+                if (_s[j] == ' ')
                 {
                     j--;
                     continue;
                 }
+
                 if (_s[i] != _s[j])
                     return false;
                 i++;
