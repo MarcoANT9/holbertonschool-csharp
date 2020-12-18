@@ -18,7 +18,6 @@ namespace MyMath
                 if (element > max)
                     max = element;
             }
-            
             return max;
         }
     }
