@@ -13,7 +13,7 @@ namespace Text.Tests
         public void empty_text()
         {
             string my_str = "";
-            bool result = str.IsPalindrome(my_str);
+            bool result = Str.IsPalindrome(my_str);
             Assert.IsTrue(result);
         }
         // 2
@@ -21,23 +21,23 @@ namespace Text.Tests
         public void not_palindrome()
         {
             string my_str = "What is this D:";
-            bool result = str.IsPalindrome(my_str);
+            bool result = Str.IsPalindrome(my_str);
             Assert.IsFalse(result);
         }
         // 3
         [Test]
         public void palindrome_lower()
         {
-            string my_str = "level";
-            bool result = str.IsPalindrome(my_str);
+            string my_str = "My gym";
+            bool result = Str.IsPalindrome(my_str);
             Assert.IsTrue(result);
         }
         // 4
         [Test]
         public void palindrome_Upper()
         {
-            string my_str = "RACECAR";
-            bool result = str.IsPalindrome(my_str);
+            string my_str = "Red rum, sir, is murder";
+            bool result = Str.IsPalindrome(my_str);
             Assert.IsTrue(result);
         }
         // 5
@@ -45,7 +45,7 @@ namespace Text.Tests
         public void palindrome_mixed()
         {
             string my_str = "rAcECaR";
-            bool result = str.IsPalindrome(my_str);
+            bool result = Str.IsPalindrome(my_str);
             Assert.IsTrue(result);
         }
         // 6
@@ -53,7 +53,7 @@ namespace Text.Tests
         public void palindrome_punctuation()
         {
             string my_str = "Anita Lava la Tina";
-            bool result = str.IsPalindrome(my_str);
+            bool result = Str.IsPalindrome(my_str);
             Assert.IsTrue(result);
         }
         // 7
@@ -61,7 +61,7 @@ namespace Text.Tests
         public void null_str()
         {
             string my_str = null;
-            bool result = str.IsPalindrome(my_str);
+            bool result = Str.IsPalindrome(my_str);
             Assert.IsTrue(result);
         }
         // 8
@@ -69,7 +69,7 @@ namespace Text.Tests
         public void not_palindrome_v2()
         {
             string my_str = "What. Is; ;this I dont even";
-            bool result = str.IsPalindrome(my_str);
+            bool result = Str.IsPalindrome(my_str);
             Assert.IsFalse(result);
         }
     }

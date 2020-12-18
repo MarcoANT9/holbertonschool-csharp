@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Text
 {
@@ -13,25 +14,23 @@ namespace Text
             if (s == null || s == "")
                 return true;
 
-            string _s = s;
+            string _s = "";
             _s = _s.ToLower();
-            _s = _s.Trim(' ', ',', '.', ':', ';');
+            List<char> charArray = new List<char> { ' ', ',', '.', ':', ';' };
+
+            foreach (char element in s)
+            {
+                if (charArray.Contains(element))
+                    continue;
+                _s += element;
+            }
+            _s = _s.ToLower();
 
             int i = 0;
             int j = _s.Length - 1;
 
-            while (i < j)
+            while (i <= j)
             {
-                if (_s[i] == ' ')
-                {
-                    i++;
-                    continue;
-                }
-                if (_s[j] == ' ')
-                {
-                    j--;
-                    continue;
-                }
                 if (_s[i] != _s[j])
                     return false;
                 i++;
