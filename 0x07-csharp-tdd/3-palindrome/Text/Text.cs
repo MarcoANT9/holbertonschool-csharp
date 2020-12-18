@@ -3,7 +3,7 @@
 namespace Text
 {
     /// <summary>This is the standard str class aparently. </summary>
-    public class str
+    public class Str
     {
         /// <summary>This method determines if a string is a palindrome or not
         /// whitout taking into account spaces and punctuation and being case
@@ -32,7 +32,6 @@ namespace Text
                     j--;
                     continue;
                 }
-
                 if (_s[i] != _s[j])
                     return false;
                 i++;
