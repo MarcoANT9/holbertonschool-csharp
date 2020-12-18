@@ -64,5 +64,13 @@ namespace Text.Tests
             bool result = str.IsPalindrome(my_str);
             Assert.IsTrue(result);
         }
+        // 8
+        [Test]
+        public void not_palindrome_v2()
+        {
+            string my_str = "What. Is; ;this I dont even";
+            bool result = str.IsPalindrome(my_str);
+            Assert.IsFalse(result);
+        }
     }
 }

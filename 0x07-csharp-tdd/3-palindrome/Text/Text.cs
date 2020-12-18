@@ -14,7 +14,9 @@ namespace Text
             if (s == null || s == "")
                 return true;
 
-            string _s = s.ToLower();
+            string _s = s;
+            _s = _s.ToLower();
+            
             List<char> punctuation = new List<char>();
             punctuation.Add(' ');
             punctuation.Add(',');
