@@ -25,7 +25,7 @@ namespace Text
             int i = 0;
             int j = s.Length - 1;
 
-            while (i <= j)
+            while (i < j)
             {
                 if (punctuation.Contains(_s[i]))
                 {
@@ -37,13 +37,10 @@ namespace Text
                     j--;
                     continue;
                 }
-                if (_s[i] == _s[j])
-                {
-                    i++;
-                    j--;
-                }
-                else
+                if (_s[i] != _s[j])
                     return false;
+                i++;
+                j--;
             }
             return true;
         }

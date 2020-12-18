@@ -28,7 +28,7 @@ namespace Text.Tests
         [Test]
         public void palindrome_lower()
         {
-            string my_str = "racecar";
+            string my_str = "level";
             bool result = str.IsPalindrome(my_str);
             Assert.IsTrue(result);
         }
