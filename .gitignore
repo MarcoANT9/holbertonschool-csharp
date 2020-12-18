@@ -46,3 +46,4 @@ obj/
 0x07-csharp-tdd/0-add/MyMath.Tests/MyMath.Tests.csproj
 0x07-csharp-tdd/0-add/MyMath.Tests/MyMath.Tests.csproj
 0x07-csharp-tdd/3-palindrome/Text.Tests/Text.Tests.csproj
+0x07-csharp-tdd/4-unique/Text.Tests/Text.Tests.csproj
