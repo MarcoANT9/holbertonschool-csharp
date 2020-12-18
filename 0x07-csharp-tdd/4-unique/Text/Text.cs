@@ -6,23 +6,39 @@ namespace Text
     public class Str
     {
         ///<summary>This method receives a string and returns the index of the
-        /// first repeating element or -1 if no char repeats.</summary>
+        /// first non-repeating element or -1 if no char repeats.</summary>
         public static int UniqueChar(string s)
         {
-            if (s == null || s == "")
+            if (s.Length == 0)
                 return -1;
+
             int i = 0;
-            int j = 0;
+            int j;
+            string repeated = "";
+            bool contains;
+
             while (i < s.Length)
             {
-                j = i + 1;
-                while (j < s.Length)
+                if (repeated.Contains(s[i].ToString()))
+                    i++;
+                else
                 {
-                    if (s[i] == s[j])
+                    contains = false;
+                    j = i + 1;
+                    while (j < s.Length)
+                    {
+                        if (s[i] == s[j])
+                        {
+                            repeated += s[j];
+                            contains = true;
+                            break;
+                        }
+                        j++;
+                    }
+                    if (contains == false)
                         return i;
-                    j++;
+                    i++;
                 }
-                i++;
             }
             return -1;
         }

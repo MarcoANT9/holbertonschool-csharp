@@ -9,19 +9,13 @@ namespace Text.Tests
         {
         }
 
-        [Test]
-        public void a_test()
-        {
-            string my_str = "this one";
-            int result = Str.UniqueChar(my_str);
-            Assert.AreEqual(-1, result);
-        }
-
-        [TestCase("this one", -1)]
-        [TestCase("marco ant", 1)]
-        [TestCase("anna", 0)]
-        [TestCase("does this one have reppeated characters", 0)]
+        [TestCase("this one", 0)]
+        [TestCase("aaabccccc", 3)]
+        [TestCase("annac", 4)]
+        [TestCase("anna", -1)]
         [TestCase("", -1)]
+        [TestCase("anacomparaenelcasino", 5)]
+        [TestCase("aaaaaaabbbbbbbbc", 15)]
         public void repeated_at_n(string my_str, int expected_index)
         {
             int result = Str.UniqueChar(my_str);
