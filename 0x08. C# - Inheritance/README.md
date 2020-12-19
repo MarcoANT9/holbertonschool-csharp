@@ -27,9 +27,9 @@ Write a method that prints the names of the available properties and methods of 
 * Prototype: public static void Print(object myObj)
 
 References:
-* [TypeInfo Class] (https://intranet.hbtn.io/rltoken/-Zh3a1z8f_FKtWOHA1pRPg)
-* [PropertyInfo Class] (https://intranet.hbtn.io/rltoken/VWXS7JiUbql6Yn1hQ4qXqg)
-* [MethodInfo Class] (https://intranet.hbtn.io/rltoken/iTsNiYm3K4ZCpaM9vv0gqw)
+* [TypeInfo Class](https://intranet.hbtn.io/rltoken/-Zh3a1z8f_FKtWOHA1pRPg/)
+* [PropertyInfo Class](https://intranet.hbtn.io/rltoken/VWXS7JiUbql6Yn1hQ4qXqg/)
+* [MethodInfo Class](https://intranet.hbtn.io/rltoken/iTsNiYm3K4ZCpaM9vv0gqw/)
 
 #### Task 4. It's not a lesson in classes and inheritance without a Dog
 Write a empty class Dog that inherits from empty class Animal.
@@ -98,7 +98,7 @@ Based on 8-shape, write a class Square that inherits from Rectangle
 #### Task 10. Lisko
 In the previous tasks, we created a class Square that inherits from Rectangle. However, what happens if you try to assign a Square’s width and height directly.
 
-Here we see there’s a flaw in our implementation of Square as inheriting from Rectangle. This is because this hierarchy violates [Liskov’s substitution principle] (https://intranet.hbtn.io/rltoken/Y4OBliliHK_G38LnNOM4Pg). What would the ideal hierarchy involving Shape, Rectangle, and Square look like instead?
+Here we see there’s a flaw in our implementation of Square as inheriting from Rectangle. This is because this hierarchy violates [Liskov’s substitution principle](https://intranet.hbtn.io/rltoken/Y4OBliliHK_G38LnNOM4Pg/). What would the ideal hierarchy involving Shape, Rectangle, and Square look like instead?
 
 Write a blog post that explains the problem with implementing a Square class as a derived class of Rectangle. It should cover:
 
