@@ -3,7 +3,7 @@
 /// <summary>This is the class Obj.</summary>
 class Obj
 {
-    /// <summary>This method determines if an object is an instance of the class int.</summary>
+    /// <summary>This method determines if an object is an int.</summary>
     public static bool IsOfTypeInt(object obj)
     {
         if (obj is int)
