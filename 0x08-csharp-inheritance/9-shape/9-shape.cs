@@ -58,7 +58,7 @@ class Rectangle : Shape
         return ($"[Rectangle] {width} / {height}");
     }
 }
-
+/// <summary>This is a class Square, it inherits from Rectangle.</summary>
 class Square : Rectangle
 {
     //=============================================================================================
@@ -72,7 +72,7 @@ class Square : Rectangle
         get { return this.size; }
         set
         {
-            if (size < 0)
+            if (value < 0)
                 throw new ArgumentException("Size must be greater than or equal to 0");
             else
                 {
