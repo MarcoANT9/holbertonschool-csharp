@@ -76,8 +76,8 @@ class Square : Rectangle
                 throw new ArgumentException("Size must be greater than or equal to 0");
             else
                 {
-                    base.Height = value;
-                    base.Width = value;
+                    this.Height = value;
+                    this.Width = value;
                     this.size = value;
                 }
         }
