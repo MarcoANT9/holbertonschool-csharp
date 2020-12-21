@@ -71,7 +71,7 @@ class Square : Rectangle
         get { return size; }
         set
         {
-            if (size < 0)
+            if (value) < 0)
                 throw new ArgumentException("Size must be greater than or equal to 0");
             else
                 {
