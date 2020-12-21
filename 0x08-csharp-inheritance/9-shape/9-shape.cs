@@ -27,7 +27,7 @@ class Rectangle : Shape
             if (value < 0)
                 throw new ArgumentException("Width must be greater than or equal to 0");
             else
-                this.width = value;
+                width = value;
         }
     }
     /// <summary>Property Height, must be positive.</summary>
@@ -39,7 +39,7 @@ class Rectangle : Shape
             if (value < 0)
                 throw new ArgumentException("Height must be greater than or equal to 0");
             else
-                this.height = value;
+                height = value;
         }
     }
     //=============================================================================================
@@ -88,6 +88,6 @@ class Square : Rectangle
     /// <summary>Overides ToString method.</summary>
     public override string ToString()
     {
-        return ($"[Sqare] {size} / {size}");
+        return ($"[Square] {size} / {size}");
     }
 }
