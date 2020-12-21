@@ -17,6 +17,7 @@ class Rectangle : Shape
     //=============================================================================================
     private int width;
     private int height;
+
     /// <summary>Property Width, must be positive.</summary>
     public int Width
     {
@@ -68,7 +69,7 @@ class Square : Rectangle
     /// <summary>Property size, must be positive.</summary>
     public int Size
     {
-        get { return size; }
+        get { return this.size; }
         set
         {
             if (size < 0)
@@ -77,7 +78,7 @@ class Square : Rectangle
                 {
                     base.Height = value;
                     base.Width = value;
-                    size = value;
+                    this.size = value;
                 }
         }
     }
