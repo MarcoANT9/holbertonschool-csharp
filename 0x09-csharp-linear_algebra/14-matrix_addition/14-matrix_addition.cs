@@ -3,7 +3,7 @@
 /// <summary>This is the class object.</summary>
 class MatrixMath
 {
-    /// <summary>This method sums two 2D or 3D matrix.</summary>
+    /// <summary>This method sums two 2D or 3D matrices.</summary>
     public static double[,] Add(double[,] matrix1, double[,] matrix2)
     {
         double[,] bat_mat = { { -1, -1 }, { -1, -1 } };
@@ -13,10 +13,10 @@ class MatrixMath
             (matrix2.GetLength(0) != matrix2.GetLength(1)) ||
             (matrix1.GetLength(0) != matrix2.GetLength(0)) ||
             (matrix1.GetLength(1) != matrix2.GetLength(1)) ||
-            (matrix1.GetLength(0 != 2 || matrix1.GetLength(0) != 3)) ||
-            (matrix2.GetLength(0 != 2 || matrix2.GetLength(0) != 3)) ||
-            (matrix1.GetLength(1 != 2 || matrix1.GetLength(1) != 3)) ||
-            (matrix2.GetLength(1 != 2 || matrix2.GetLength(1) != 3))
+            (matrix1.GetLength(0) != 2 || matrix1.GetLength(0) != 3) ||
+            (matrix2.GetLength(0) != 2 || matrix2.GetLength(0) != 3) ||
+            (matrix1.GetLength(1) != 2 || matrix1.GetLength(1) != 3) ||
+            (matrix2.GetLength(1) != 2 || matrix2.GetLength(1) != 3)
 
         )
             return bat_mat;
