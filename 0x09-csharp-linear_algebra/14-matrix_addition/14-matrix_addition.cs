@@ -6,18 +6,16 @@ class MatrixMath
     /// <summary>This method sums two 2D or 3D matrices.</summary>
     public static double[,] Add(double[,] matrix1, double[,] matrix2)
     {
-        double[,] bat_mat = { { -1, -1 }, { -1, -1 } };
 
         if (
-            (matrix1.GetLength(0) != matrix1.GetLength(1)) ||
-            (matrix2.GetLength(0) != matrix2.GetLength(1)) ||
-            (matrix1.GetLength(0) != matrix2.GetLength(0)) ||
-            (matrix1.GetLength(1) != matrix2.GetLength(1)) ||
-            (matrix1.Rank != 2 && matrix1.Rank != 3) ||
-            (matrix2.Rank != 2 && matrix2.Rank != 3)
-
+            (matrix1.GetLength(0) < 2 || matrix1.GetLength(0) > 3) ||
+            (matrix1.GetLength(1) < 2 || matrix1.GetLength(1) > 3) ||
+            (matrix2.GetLength(0) < 2 || matrix2.GetLength(0) > 3) ||
+            (matrix2.GetLength(1) < 2 || matrix2.GetLength(1) > 3) ||
+            (matrix1.GetLength(0) != matrix2.GetLength(0))
         )
-            return bat_mat;
+            return new double[,] {{-1}};
+
         double[,] newMatrix = new double[matrix1.GetLength(0),matrix1.GetLength(1)];
         int i = 0;
         int j;
