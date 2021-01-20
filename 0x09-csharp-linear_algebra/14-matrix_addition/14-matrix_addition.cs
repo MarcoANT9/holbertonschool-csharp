@@ -13,10 +13,8 @@ class MatrixMath
             (matrix2.GetLength(0) != matrix2.GetLength(1)) ||
             (matrix1.GetLength(0) != matrix2.GetLength(0)) ||
             (matrix1.GetLength(1) != matrix2.GetLength(1)) ||
-            (matrix1.GetLength(0) != 2 && matrix1.GetLength(0) != 3) ||
-            (matrix2.GetLength(0) != 2 && matrix2.GetLength(0) != 3) ||
-            (matrix1.GetLength(1) != 2 && matrix1.GetLength(1) != 3) ||
-            (matrix2.GetLength(1) != 2 && matrix2.GetLength(1) != 3)
+            (matrix1.Rank != 2 && matrix1.Rank != 3) ||
+            (matrix2.Rank != 2 && matrix2.Rank != 3)
 
         )
             return bat_mat;
