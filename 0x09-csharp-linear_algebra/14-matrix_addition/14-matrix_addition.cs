@@ -1,7 +1,9 @@
 ﻿using System;
 
+/// <summary>This is the class object.</summary>
 class MatrixMath
 {
+    /// <summary>This method sums two 2D or 3D matrix.</summary>
     public static double[,] Add(double[,] matrix1, double[,] matrix2)
     {
         double[,] bat_mat = { { -1, -1 }, { -1, -1 } };
