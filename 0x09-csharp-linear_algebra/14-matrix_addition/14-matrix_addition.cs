@@ -20,19 +20,20 @@ class MatrixMath
 
         )
             return bat_mat;
+        double[,] newMatrix = new double[matrix1.GetLength(0),matrix1.GetLength(1)];
         int i = 0;
         int j;
-        while (i < matrix1.GetLength(0))
+        while (i < newMatrix.GetLength(0))
         {
             j = 0;
-            while(j < matrix1.GetLength(1))
+            while(j < newMatrix.GetLength(1))
             {
-                matrix1[i, j] += matrix2[i, j];
+                newMatrix[i, j] = matrix1[i, j] + matrix2[i, j];
                 j++;
             }
             i++;
         }
-        return (matrix1);
+        return (newMatrix);
     }
 }
 
