@@ -3,7 +3,7 @@
 /// <summary>This is the class object.</summary>
 class MatrixMath
 {
-    /// <summary>This method multiplies a scalar with a matrix.</summary>
+    /// <summary>This method gets the determinant of a matrix.</summary>
     public static double Determinant(double[,] matrix)
     {
         if (
