@@ -6,7 +6,7 @@ class MatrixMath
     /// <summary>This method rotates a matrix angle radians.</summary>
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
-        if (matrix is not double[,] || matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
+        if (!(matrix is double[,]) || matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
             return new double[,] { { -1 } };
         double[,] matRot = { { 0, 0 }, { 0, 0 } };
 
