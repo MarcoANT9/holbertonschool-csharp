@@ -1,8 +1,9 @@
 ﻿using System;
 
-
+/// <summary>This is the class object.</summary>
 class MatrixMath
 {
+    /// <summary>This method rotates a matrix angle radians.</summary>
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
         if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
