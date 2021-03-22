@@ -30,7 +30,7 @@ public class Queue<T>
         ///<summary>This is the value to store in the node.</summary>
         public T value = default(T);
         ///<summary>This is the next node.</summary>
-        public Node Next = null;
+        public Node next = null;
 
         ///<summary>This method gives a value to the value variable.</summary>
         public Node(T var)
@@ -82,7 +82,7 @@ public class Queue<T>
         }
         else
         {
-            tail.Next = newNode;
+            tail.next = newNode;
             tail = newNode;
         }
 
