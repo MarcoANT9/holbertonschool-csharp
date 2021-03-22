@@ -53,7 +53,7 @@ public class Queue<T>
 
 
     ///<summary>This method eliminates the first element of the Queue.</summary>
-    public int Dequeue()
+    public T Dequeue()
     {
         if (head == null)
             {
