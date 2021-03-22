@@ -102,7 +102,6 @@ public class Queue<T>
     }
 
 
-
     ///<summary>This method prints all the elements in a Queue.</summary>
     public void Print()
     {
@@ -111,8 +110,7 @@ public class Queue<T>
         else
         {
             Node temp = head;
-            Console.WriteLine(temp.value);
-            while (temp.next != null)
+            while (temp != null)
             {
                 Console.WriteLine(temp.value);
                 temp = temp.next;
