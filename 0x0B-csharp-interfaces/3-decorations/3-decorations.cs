@@ -187,9 +187,9 @@ public class Decoration : Base, IInteractive, IBreakable
 
         if (durability > 0)
             Console.WriteLine($"You hit the {this.name}. It cracks.");
-        if (durability == 0)
+        else if (durability == 0)
             Console.WriteLine($"You smash the {this.name}. What a mess.");
-        if (durability < 0)
+        else
             Console.WriteLine($"The {this.name} is already broken.");
     }
 
