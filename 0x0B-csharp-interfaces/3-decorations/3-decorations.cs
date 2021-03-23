@@ -112,7 +112,7 @@ public class Door : Base, IInteractive
     ///<summary>This method allows interaction with objects.</summary>
     public void Interact()
     {
-        Console.WriteLine($"You try to open the {name}. It's locked.");
+        Console.WriteLine($"You try to open the {this.name}. It's locked.");
     }
 
 
@@ -175,11 +175,11 @@ public class Decoration : Base, IInteractive, IBreakable
     public void Interact()
     {
         if (durability <= 0)
-            Console.WriteLine($"The {name} has been broken.");
+            Console.WriteLine($"The {this.name} has been broken.");
         else if (isQuestItem)
-            Console.WriteLine($"You look at the {name}. There's a key inside.");
+            Console.WriteLine($"You look at the {this.name}. There's a key inside.");
         else
-            Console.WriteLine($"You look at the {name}. Not much to see here.");
+            Console.WriteLine($"You look at the {this.name}. Not much to see here.");
     }
 
     ///<summary>This method allows breaking of an object.</summary>
@@ -188,11 +188,11 @@ public class Decoration : Base, IInteractive, IBreakable
         durability--;
 
         if (durability > 0)
-            Console.WriteLine($"Yu hit the {name}. It cracks.");
+            Console.WriteLine($"Yu hit the {this.name}. It cracks.");
         else if (durability == 0)
-            Console.WriteLine($"You smash the {name}. What a mess.");
+            Console.WriteLine($"You smash the {this.name}. What a mess.");
         else
-            Console.WriteLine($"The {name} is already broken.");
+            Console.WriteLine($"The {this.name} is already broken.");
     }
 
 
