@@ -29,8 +29,8 @@ public interface IInteractive
 //###########################################################################
 //# CLASSES #################################################################
 //###########################################################################
-
-abstract class Base
+///<summary>This is the Base class.</summary>
+public abstract class Base
 {
     //=======================================================================
     //= Properties ==========================================================
@@ -71,7 +71,7 @@ abstract class Base
 }
 
 ///<summary>This class correponds to a test object.</summary>
-public class TestObject : IBreakable, ICollectable, IInteractive
+public class TestObject : Base, IBreakable, ICollectable, IInteractive
 {
     //=======================================================================
     //= Properties ==========================================================
