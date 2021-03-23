@@ -7,7 +7,7 @@
 public interface IBreakable
 {
     ///<summary>This property determines the durability of an object.</summary>
-    int durability { get; }
+    int durability { get; set;}
     ///<summary>Method to break something.</summary>
     void Break();
 }
@@ -15,7 +15,7 @@ public interface IBreakable
 public interface ICollectable
 {
     ///<summary>This property determines if an object has been colected.</summary>
-    bool isCollected { get; }
+    bool isCollected { get; set;}
     ///<summary>Method to collect items.</summary>
     void Collect();
 }
