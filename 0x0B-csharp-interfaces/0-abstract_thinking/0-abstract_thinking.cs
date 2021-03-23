@@ -8,7 +8,7 @@ abstract class Base
 
     // - Public -------------------------------------------------------------
     ///<summary>This property represents the name.</summary>
-    public string name {get; set;} = null;
+    public string name = null;
 
     // - Private ------------------------------------------------------------
 
@@ -28,6 +28,7 @@ abstract class Base
     //=======================================================================
 
     // - Public -------------------------------------------------------------
+    ///<summary>This method overrides the ToString default method.</summary>
     public override string ToString() => $"{name} is a {this.GetType()}";
     
 
