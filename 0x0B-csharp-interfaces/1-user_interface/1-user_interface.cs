@@ -1,34 +1,6 @@
 ﻿using System;
 
 //###########################################################################
-//# INTERFACES ##############################################################
-//###########################################################################
-///<summary>This interface determines if an object is breakable.</summary>
-public interface IBreakable
-{
-    ///<summary>Property durability.</summary>
-    int durability { get; set; }
-    ///<summary>Method Break.</summary>
-    void Break();
-}
-
-///<summary>This interface determines if an object is collectable.</summary>
-public interface ICollectable
-{
-    /// <summary>Property isCollected.</summary>
-    bool isCollected { get; set; }
-    /// <summary>Method Collect.</summary>
-    void Collect();
-}
-
-///<summary>This interface determines if an object is interactable.</summary>
-public interface IInteractive
-{
-    /// <summary>Method Interact.</summary>
-    void Interact();
-}
-
-//###########################################################################
 //# CLASSES #################################################################
 //###########################################################################
 ///<summary>This is the Base class.</summary>
@@ -74,6 +46,36 @@ public abstract class Base
     //= END OF CLASS ========================================================
     //=======================================================================
 }
+
+//###########################################################################
+//# INTERFACES ##############################################################
+//###########################################################################
+///<summary>This interface determines if an object is breakable.</summary>
+public interface IBreakable
+{
+    ///<summary>Property durability.</summary>
+    int durability { get; set; }
+    ///<summary>Method Break.</summary>
+    void Break();
+}
+
+///<summary>This interface determines if an object is collectable.</summary>
+public interface ICollectable
+{
+    /// <summary>Property isCollected.</summary>
+    bool isCollected { get; set; }
+    /// <summary>Method Collect.</summary>
+    void Collect();
+}
+
+///<summary>This interface determines if an object is interactable.</summary>
+public interface IInteractive
+{
+    /// <summary>Method Interact.</summary>
+    void Interact();
+}
+
+
 
 ///<summary>This class correponds to a test object.</summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
