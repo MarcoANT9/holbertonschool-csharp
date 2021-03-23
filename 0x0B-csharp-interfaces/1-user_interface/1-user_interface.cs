@@ -50,6 +50,14 @@ public abstract class Base
 //###########################################################################
 //# INTERFACES ##############################################################
 //###########################################################################
+
+///<summary>This interface determines if an object is interactable.</summary>
+public interface IInteractive
+{
+    /// <summary>Method Interact.</summary>
+    void Interact();
+}
+
 ///<summary>This interface determines if an object is breakable.</summary>
 public interface IBreakable
 {
@@ -68,14 +76,6 @@ public interface ICollectable
     void Collect();
 }
 
-///<summary>This interface determines if an object is interactable.</summary>
-public interface IInteractive
-{
-    /// <summary>Method Interact.</summary>
-    void Interact();
-}
-
-
 
 ///<summary>This class correponds to a test object.</summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
@@ -85,10 +85,11 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
     //=======================================================================
 
     // ~ Public ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ///<summary>Property for collecting.</summary>
-    public bool isCollected { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     ///<summary>Property durability.</summary>
     public int durability { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    ///<summary>Property for collecting.</summary>
+    public bool isCollected { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
 
 
     // ~ Private ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -109,6 +110,12 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
     //=======================================================================
 
     // ~ Public ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ///<summary>This method allows interaction with objects.</summary>
+    public void Interact()
+    {
+        throw new NotImplementedException();
+    }
+    
     ///<summary>Method to break something.</summary>
     public void Break()
     {
@@ -119,14 +126,7 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
     {
         throw new NotImplementedException();
     }
-    ///<summary>This method allows interaction with objects.</summary>
-    public void Interact()
-    {
-        throw new NotImplementedException();
-    }
-
-
-
+    
     // ~ Private ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
