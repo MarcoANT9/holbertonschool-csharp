@@ -11,6 +11,7 @@ public interface IBreakable
     ///<summary>Method to break something.</summary>
     void Break();
 }
+
 ///<summary>This interface determines if an object is collectable.</summary>
 public interface ICollectable
 {
@@ -19,6 +20,7 @@ public interface ICollectable
     ///<summary>Method to collect items.</summary>
     void Collect();
 }
+
 ///<summary>This interface determines if an object is interactable.</summary>
 public interface IInteractive
 {
@@ -59,7 +61,7 @@ public abstract class Base
 
     // ~ Public ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ///<summary>This method overrides the ToString default method.</summary>
-    public override string ToString() => $"{name} is a {this.GetType().Name}";
+    public override string ToString() => $"{name} is a {this.GetType()}";
 
 
     // ~ Private ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
