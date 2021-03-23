@@ -125,7 +125,6 @@ public class Door : Base, IInteractive
 
 }
 
-
 ///<summary>This class correponds to a test object.</summary>
 public class Decoration : Base, IInteractive, IBreakable
 {
@@ -143,11 +142,10 @@ public class Decoration : Base, IInteractive, IBreakable
     ///<summary>Class Constructor.</summary>
     public Decoration(string name = "Decoration", int durability = 1, bool isQuestItem = false)
     {
-        this.name = name;
-
         if (durability <= 0)
             throw new Exception("Durability must be greater than 0");
 
+        this.name = name;
         this.durability = durability;
         this.isQuestItem = isQuestItem;
     }
@@ -178,7 +176,7 @@ public class Decoration : Base, IInteractive, IBreakable
             Console.WriteLine($"The {this.name} has been broken.");
         else if (isQuestItem)
             Console.WriteLine($"You look at the {this.name}. There's a key inside.");
-        else
+        else if (isQuestItem == false)
             Console.WriteLine($"You look at the {this.name}. Not much to see here.");
     }
 
