@@ -29,7 +29,10 @@ abstract class Base
 
     // - Public -------------------------------------------------------------
     ///<summary>This method overrides the ToString default method.</summary>
-    public override string ToString() => $"{name} is a {this.GetType()}";
+    public override string ToString()
+    {
+        return $"{name} is a {this.GetType()}";
+    }
     
 
     // - Private ------------------------------------------------------------
