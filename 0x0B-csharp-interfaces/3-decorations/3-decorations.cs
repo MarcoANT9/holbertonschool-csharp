@@ -145,7 +145,7 @@ public class Decoration : Base, IInteractive, IBreakable
     {
         this.name = name;
 
-        if (durability < 0)
+        if (durability <= 0)
             throw new Exception("Durability must be greater than 0");
 
         this.durability = durability;
