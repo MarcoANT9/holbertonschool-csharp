@@ -6,25 +6,25 @@
 ///<summary>This interface determines if an object is breakable.</summary>
 public interface IBreakable
 {
-    ///<summary>This property determines the durability of an object.</summary>
-    int durability { get; set;}
-    ///<summary>Method to break something.</summary>
+    ///<summary>Property durability.</summary>
+    int durability { get; set; }
+    ///<summary>Method Break.</summary>
     void Break();
 }
 
 ///<summary>This interface determines if an object is collectable.</summary>
 public interface ICollectable
 {
-    ///<summary>This property determines if an object has been colected.</summary>
-    bool isCollected { get; set;}
-    ///<summary>Method to collect items.</summary>
+    /// <summary>Property isCollected.</summary>
+    bool isCollected { get; set; }
+    /// <summary>Method Collect.</summary>
     void Collect();
 }
 
 ///<summary>This interface determines if an object is interactable.</summary>
 public interface IInteractive
 {
-    ///<summary>This method allows interaction with objects.</summary>
+    /// <summary>Method Interact.</summary>
     void Interact();
 }
 
@@ -39,7 +39,7 @@ public abstract class Base
     //=======================================================================
 
     // ~ Public ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ///<summary>This property represents the name.</summary>
+    /// <summary>Name Property.</summary>
     public string name { get; set; }
 
     // ~ Private ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,8 +60,11 @@ public abstract class Base
     //=======================================================================
 
     // ~ Public ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ///<summary>This method overrides the ToString default method.</summary>
-    public override string ToString() => $"{name} is a {this.GetType()}";
+    /// <summary>ToString Method Override.</summary>
+    public override string ToString()
+    {
+        return $"{this.name} is a {this.GetType().Name}";
+    }
 
 
     // ~ Private ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,7 +76,7 @@ public abstract class Base
 }
 
 ///<summary>This class correponds to a test object.</summary>
-public class TestObject : Base, IBreakable, ICollectable, IInteractive
+public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
     //=======================================================================
     //= Properties ==========================================================
