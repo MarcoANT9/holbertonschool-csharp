@@ -85,6 +85,7 @@ public class Door : Base, IInteractive
     //=======================================================================
 
     // ~ Public ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ///<summary>This assigns the name to the door.</summary>
     public Door(string name = "Door")
     {
         this.name = name;
