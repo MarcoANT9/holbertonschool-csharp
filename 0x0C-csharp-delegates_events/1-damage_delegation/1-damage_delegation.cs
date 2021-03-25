@@ -65,7 +65,7 @@ public class Player
     }
 
     ///<summary>This is the method to display damage taken.</summary>
-    void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         if (damage < 0)
             damage = 0;
@@ -73,11 +73,11 @@ public class Player
     }
 
     ///<summary>This is the method to display damage healed.</summary>
-    void HealDamage(float heal)
+    public void HealDamage(float heal)
     {
         if (heal < 0)
             heal = 0;
-        Console.WriteLine($"{this.name} heals {damage} HP!");
+        Console.WriteLine($"{this.name} heals {heal} HP!");
     }
 
     // ~ Private ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
