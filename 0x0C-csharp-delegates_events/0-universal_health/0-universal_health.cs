@@ -20,11 +20,11 @@ public class Player
 
     // ~ Public ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     /// <summary>Name Property.</summary>
-    public string name { get; set; }
+    string name;
     /// <summary>Maximum Health Points Property.</summary>
-    public float maxHp { get; set; }
+    float maxHp;
     /// <summary>Current Health Points Property.</summary>
-    public float hp { get; set; }
+    float hp;
 
     // ~ Private ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
