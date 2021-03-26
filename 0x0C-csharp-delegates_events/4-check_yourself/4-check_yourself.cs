@@ -49,9 +49,9 @@ public class Player
     /// </summary>
     /// <param name="name">Plauer/Character Name.</param>
     /// <param name="maxHp">Maximum Health Points value.</param>
-    public Player(string name = "Player", float maxHp = 100.0f, string status = "<name> is ready to go!")
+    public Player(string name = "Player", float maxHp = 100.0f)
     {
-        this.status = status;
+        status = $"{name} is ready to go!";
         if (maxHp <= 0)
         {
             maxHp = 100.0f;
