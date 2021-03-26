@@ -171,17 +171,6 @@ public class Player
     }
 
     /// <summary>
-    /// This Method checks the status.
-    /// </summary>
-    /// <param name="e">Arguments</param>
-    private void OnCheckStatus(CurrentHPArgs e)
-    {
-        if (e.currentHp < this.maxHp / 4)
-            HPCheck += HPValueWarning;
-        HPCheck(this, e);
-    }
-
-    /// <summary>
     /// This method sends warnings to the player according to its health values.
     /// </summary>
     /// <param name="sender">Sender</param>
@@ -200,6 +189,19 @@ public class Player
             Console.WriteLine("Health is low!");
             Console.ResetColor();
         }
+    }
+
+        /// <summary>
+    /// This Method checks the status.
+    /// </summary>
+    /// <param name="e">Arguments</param>
+    private void OnCheckStatus(CurrentHPArgs e)
+    {
+        if (e.currentHp < this.maxHp / 4)
+            HPCheck += HPValueWarning;
+        else
+            HPCheck -= HPValueWarning;
+        HPCheck(this, e);
     }
 
     //=======================================================================
