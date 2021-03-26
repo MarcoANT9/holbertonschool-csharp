@@ -143,27 +143,27 @@ public class Player
     /// <param name="e">Current HP Arguments</param>
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
-        if (e.currentHP == this.maxHp)
+        if (e.currentHp == this.maxHp)
         {
             status = $"{this.name} is in perfect health!";
             Console.WriteLine(status);
         }
-        if (e.currentHP >= this.maxHp / 2 && e.currentHP < this.maxHp)
+        if (e.currentHp >= this.maxHp / 2 && e.currentHp < this.maxHp)
         {
             status = $"{this.name} is doing well!";
             Console.WriteLine(status);
         }
-        if (e.currentHP >= this.maxHp / 4 && e.currentHP < this.maxHp / 2)
+        if (e.currentHp >= this.maxHp / 4 && e.currentHp < this.maxHp / 2)
         {
             status = $"{this.name} isn't doing too great...";
             Console.WriteLine(status);
         }
-        if (e.currentHP > 0 && e.currentHP < this.maxHp / 4)
+        if (e.currentHp > 0 && e.currentHp < this.maxHp / 4)
         {
             status = $"{this.name} needs help!";
             Console.WriteLine(status);
         }
-        if (e.currentHP == 0)
+        if (e.currentHp == 0)
         {
             status = $"{this.name} is knocked out!";
             Console.WriteLine(status);
