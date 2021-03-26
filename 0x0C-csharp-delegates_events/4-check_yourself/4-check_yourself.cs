@@ -180,7 +180,7 @@ public class CurrentHPArgs : EventArgs
 {
 
     /// <summary>This is the current HP not to be modified.</summary>
-    public float currentHP;
+    public float currentHp;
 
     // ~ Constructor ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     /// <summary>
@@ -189,7 +189,7 @@ public class CurrentHPArgs : EventArgs
     /// <param name="newHp">New HP.</param>
     public CurrentHPArgs(float newHp)
     {
-        this.currentHP = newHp;
+        this.currentHp = newHp;
     }
 
     //=======================================================================
