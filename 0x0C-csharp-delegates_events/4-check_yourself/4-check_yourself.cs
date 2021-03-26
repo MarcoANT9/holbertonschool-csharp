@@ -180,7 +180,7 @@ public class CurrentHPArgs : EventArgs
 {
 
     /// <summary>This is the current HP not to be modified.</summary>
-    public float currentHp;
+    public float currentHp {get;}
 
     // ~ Constructor ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     /// <summary>
