@@ -1,19 +1,21 @@
 ﻿using System;
 
-/// <summary>
-/// This is the class used to create users.
-/// </summary>
-public class User : BaseClass
+namespace InventoryLibrary
 {
-    string name;
-
     /// <summary>
-    /// Class Constructor.
+    /// This is the class used to create users.
     /// </summary>
-    /// <param name="name">User name.</param>
-    public User (string name = "Default_User_Name")
+    public class User : BaseClass
     {
-        this.name = name;
+        string name;
+
+        /// <summary>
+        /// Class Constructor.
+        /// </summary>
+        /// <param name="name">User name.</param>
+        public User(string name = "Default_User_Name")
+        {
+            this.name = name;
+        }
     }
 }
-
