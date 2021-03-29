@@ -197,7 +197,7 @@ public class Player
     /// <param name="e">Arguments</param>
     private void OnCheckStatus(CurrentHPArgs e)
     {
-        if (e.currentHp < this.maxHp / 4)
+        if (e.currentHp <= this.maxHp / 4)
             HPCheck += HPValueWarning;
         else
             HPCheck -= HPValueWarning;
