@@ -39,7 +39,7 @@ public class JSONStorage
     /// </summary>
     /// <param name="obj">Objecto to save into de Dict.</param>
     /// <param name="args">List of arguments to initialize the class.</param>
-    public void New(string nameClass, string[] args = null)
+    public void New(string nameClass)
     {
         if (nameClass == "item")
         {
@@ -67,7 +67,6 @@ public class JSONStorage
         var options = new JsonSerializerOptions
         {
             IgnoreNullValues = true,
-            WriteIndented = true
         };
 
         string jsonString = JsonSerializer.Serialize<Dictionary<string, object>>(objects, options);
