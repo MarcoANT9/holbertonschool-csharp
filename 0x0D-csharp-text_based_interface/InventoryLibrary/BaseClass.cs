@@ -7,9 +7,9 @@
 /// </summary>
 public class BaseClass
 {
-    public string id { get; set; }
-    public DateTime date_created { get; set; }
-    public DateTime date_updated { get; set; }
+    public string id { get; }
+    public DateTime date_created { get; }
+    public DateTime date_updated { get; }
 
     public BaseClass(string id = null, DateTime date_created = default(DateTime), DateTime date_updated = default(DateTime))
     {
